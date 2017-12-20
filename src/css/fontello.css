@@ -1,0 +1,45 @@
+/*
+Error: Invalid GBK character "\xEE"
+        on line 57 of fontello.scss
+
+52:  
+53:   /* Uncomment for 3D effect *\/
+54:   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); *\/
+55: }
+56:  
+57: .icon-wechat:before { content: '\e800'; } /* '' *\/
+58: .icon-qq:before { content: '\e801'; } /* '' *\/
+59: .icon-bookmark:before { content: '\e802'; } /* '' *\/
+60: .icon-heart:before { content: '\e803'; } /* '' *\/
+61: .icon-mail-alt:before { content: '\e804'; } /* '' *\/
+62: .icon-link:before { content: '\e805'; } /* '' *\/
+
+Backtrace:
+fontello.scss:57
+C:/soft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/util.rb:1300:in `rescue in block in find_encoding_error'
+C:/soft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/util.rb:1297:in `block in find_encoding_error'
+C:/soft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/util.rb:1296:in `each'
+C:/soft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/util.rb:1296:in `each_with_index'
+C:/soft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/util.rb:1296:in `find_encoding_error'
+C:/soft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/util.rb:905:in `check_sass_encoding'
+C:/soft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:436:in `check_encoding!'
+C:/soft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:392:in `_to_tree'
+C:/soft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/soft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/soft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/soft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/soft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+C:/soft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/soft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/soft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+C:/soft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/soft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+C:/soft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+C:/soft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/bin/scss:13:in `<top (required)>'
+C:/soft/Ruby23-x64/bin/scss:22:in `load'
+C:/soft/Ruby23-x64/bin/scss:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xEE\"\A         on line 57 of fontello.scss\A \A 52:  \A 53:   /* Uncomment for 3D effect */\A 54:   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */\A 55: }\A 56:  \A 57: .icon-wechat:before { content: '\e800'; } /* '' */\A 58: .icon-qq:before { content: '\e801'; } /* '' */\A 59: .icon-bookmark:before { content: '\e802'; } /* '' */\A 60: .icon-heart:before { content: '\e803'; } /* '' */\A 61: .icon-mail-alt:before { content: '\e804'; } /* '' */\A 62: .icon-link:before { content: '\e805'; } /* '' */"; }

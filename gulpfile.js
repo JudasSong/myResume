@@ -38,7 +38,7 @@ var files = {
  });*/
 
 // 本地服务器功能，自动刷新（开发环境）
-gulp.task('server', ['compressCSS', 'uglifyJS', 'imageMin'], function () {
+gulp.task('server', ['compressCSS', 'uglifyJS'], function () {
     var reload = browserSync.reload;
     browserSync.init({
         server: {
@@ -49,7 +49,7 @@ gulp.task('server', ['compressCSS', 'uglifyJS', 'imageMin'], function () {
     gulp.watch(files.cssFiles, ['compressCSS']);
 
     //监视src/img文件夹中的所有文件，有改动就调用imageMin任务压缩
-    gulp.watch(files.imgFiles, ['imageMin']);
+    // gulp.watch(files.imgFiles, ['imageMin']);
 
     //监视src/js文件夹中所有js文件有改动就调用uglifyJS任务压缩并且刷新浏览器
     gulp.watch(files.jsFiles, ['uglifyJS']);
